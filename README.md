@@ -22,13 +22,35 @@ This tool performs arithmetic on the numbers you enter. It is not financial, tax
 
 Everything runs in your browser. Nothing you type is sent anywhere, stored, or saved. Closing the tab clears it.
 
-## Use it
+## Use
 
 Open `index.html` in any modern browser, or host it as a static page. No build step, no dependencies, no network calls.
+
+1. Enter your fixed costs.
+2. Enter the price per unit and the variable cost per unit.
+3. Read the contribution margin, the break-even point in units, and the revenue at break-even. Results update as you type.
+4. Check the chart to see where the revenue line crosses the total cost line.
+
+## Why this exists
+
+Working out how many units you need to sell should not mean handing your costs and prices to a hosted spreadsheet or a site that tracks you. This is one HTML file that does the arithmetic in your browser, with no tracking, released under the MIT license.
 
 ## More
 
 Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/break-even-units-calculator
+cd break-even-units-calculator
+```
+
+Open `index.html` in a browser, or serve the folder with `python -m http.server 8000` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one `index.html` file with inline CSS and JavaScript.
 
 ## Third-party notices
 
